@@ -1,0 +1,41 @@
+---
+label: Intro Section
+hide_body: true
+is_partial: true
+display_field: title
+fields:
+  - type: field_group_list
+    name: actions
+    label: Section Action Buttons
+    config:
+      labelField: label
+    fields:
+      - type: include
+        name: include_action
+        label: Include action
+        template: action
+  - type: textarea
+    name: content
+    label: Section Content
+    description: The text displayed as section content
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: text
+    name: title
+    label: Section Title
+    description: The bold text displayed at the top of the section
+    default: Reflex
+    config:
+      required: true
+  - type: file
+    name: img_path
+    label: Image
+    description: The image displayed on the left side of the section
+  - type: text
+    name: component
+    hidden: true
+    default: intro.html
+    config:
+      required: true
