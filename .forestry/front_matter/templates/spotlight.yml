@@ -4,6 +4,14 @@ hide_body: true
 is_partial: true
 display_field: title
 fields:
+  - type: textarea
+    name: content
+    label: Section Content
+    description: The text displayed as section content
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
   - type: field_group_list
     name: actions
     label: Section Action Buttons
@@ -14,14 +22,6 @@ fields:
         name: include_action
         label: Action
         template: action
-  - type: textarea
-    name: content
-    label: Section Content
-    description: The text displayed as section content
-    config:
-      wysiwyg: true
-      schema:
-        format: markdown
   - type: text
     name: title
     label: Section Title

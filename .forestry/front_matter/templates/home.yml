@@ -24,4 +24,5 @@ fields:
       - features
       - spotlight
       - mission
-pages: []
+pages:
+  - index.md

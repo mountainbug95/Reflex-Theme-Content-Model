@@ -43,4 +43,7 @@ fields:
     label: Post Date
     config:
       required: true
-pages: []
+pages:
+  - _posts/2017-04-03-aliquam-veroeros.md
+  - _posts/2017-04-02-nostra-adpiscing.md
+  - _posts/2017-04-01-tempus-litoria.md
