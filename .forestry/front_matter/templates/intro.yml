@@ -35,6 +35,7 @@ fields:
     description: The image displayed on the left side of the section
   - type: text
     name: component
+    label: Section Component
     hidden: true
     default: intro.html
     config:
