@@ -108,11 +108,16 @@ collections:
             required: false
             label: Sections
             hint: Home Sections
-            widgets:
+            types:
               - name: intro
                 widget: object
                 label: Intro Section
                 fields:
+                  - name: content
+                    widget: markdown
+                    required: false
+                    label: Section Content
+                    hint: The text displayed as section content
                   - name: actions
                     widget: list
                     required: false
@@ -141,11 +146,6 @@ collections:
                         label: Is Primary
                         default: false
                         hint: Gives the button a primary color scheme
-                  - name: content
-                    widget: markdown
-                    required: false
-                    label: Section Content
-                    hint: The text displayed as section content
                   - name: title
                     widget: string
                     required: true
@@ -160,11 +160,17 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: intro.html
               - name: features
                 widget: object
                 label: Features Section
                 fields:
+                  - name: content
+                    widget: markdown
+                    required: false
+                    label: Section Content
+                    hint: The text displayed as section content
                   - name: actions
                     widget: list
                     required: false
@@ -193,11 +199,6 @@ collections:
                         label: Is Primary
                         default: false
                         hint: Gives the button a primary color scheme
-                  - name: content
-                    widget: markdown
-                    required: false
-                    label: Section Content
-                    hint: The text displayed as section content
                   - name: title
                     widget: string
                     required: true
@@ -227,11 +228,17 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: features.html
               - name: spotlight
                 widget: object
                 label: Spotlight Section
                 fields:
+                  - name: content
+                    widget: markdown
+                    required: false
+                    label: Section Content
+                    hint: The text displayed as section content
                   - name: actions
                     widget: list
                     required: false
@@ -260,11 +267,6 @@ collections:
                         label: Is Primary
                         default: false
                         hint: Gives the button a primary color scheme
-                  - name: content
-                    widget: markdown
-                    required: false
-                    label: Section Content
-                    hint: The text displayed as section content
                   - name: title
                     widget: string
                     required: true
@@ -279,11 +281,17 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: spotlight.html
               - name: mission
                 widget: object
                 label: Mission Section
                 fields:
+                  - name: content
+                    widget: markdown
+                    required: false
+                    label: Section Content
+                    hint: The text displayed as section content
                   - name: actions
                     widget: list
                     required: false
@@ -312,11 +320,6 @@ collections:
                         label: Is Primary
                         default: false
                         hint: Gives the button a primary color scheme
-                  - name: content
-                    widget: markdown
-                    required: false
-                    label: Section Content
-                    hint: The text displayed as section content
                   - name: title
                     widget: string
                     required: true
@@ -326,6 +329,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: mission.html
   - name: page
     label: Pages
